@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <strong>Hello World!</strong>
+      <div class="tooltip">
+        <div class="thumb">
+          <img
+            src="https://www.coopeuch.cl/media/wysiwyg/Ilustracion_tooltips2_1.png"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <div class="exit-tooltip-btn-container">
+            <button type="button" class="exit-tooltip-btn">x</button>
+          </div>
+          <p class="description">¡Recuerda revisar tus contratos aqui!</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  .tooltip {
+    font-family: 'Ubuntu';
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
+    width: 22rem;
+    height: 4rem;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s ease all;
+  }
+  .tooltip.visible {
+    z-index: 1;
+    opacity: 1;
+  }
+  .tooltip::after {
+    content: '';
+    display: inline-block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+    filter: drop-shadow(0px -4px 5px rgba(0, 0, 0, 0.2));
+    position: absolute;
+    top: -15px;
+    left: calc(81%);
+  }
+  .tooltip .thumb {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: space-around;
+  }
+  .tooltip .thumb img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    vertical-align: top;
+  }
+  .tooltip .exit-tooltip-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  .tooltip .exit-tooltip-btn-container .exit-tooltip-btn {
+    font-size: 0.9rem;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px;
+    padding: 0px 0px;
+    border-width: 0;
+    width: 5%;
+    margin-top: -6px;
+    min-height: 0;
+  }
+  .exit-tooltip-btn:hover {
+    cursor: pointer;
+  }
+  .tooltip .info {
+    width: 75%;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tooltip .info .description {
+    font-size: 14px;
+    padding-top: 0;
+  }
+</style>

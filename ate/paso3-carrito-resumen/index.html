@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="card-abstract">
+      <div class="header">
+        <div class="info">
+          <div class="title">
+            <p>Resumen de tu crédito:</p>
+          </div>
+          <div class="description">
+            <p>
+              Monto: <span id="Monto"></span><br /><span id="Cuotas"></span>
+              cuotas de <span id="ValorCuota"></span> - Tasa
+              <span id="Tasa"></span>
+            </p>
+          </div>
+        </div>
+        <span class="iconAdded">
+          <img
+            src="https://www.coopeuch.cl/media/imagegallery/images/arrow_down_lightblue.svg"
+            alt="despelgar"
+          />
+        </span>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6">
+                <p></p>
+              </div>
+              <div class="col-6 txtAlignR">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .card-abstract {
+        font-family: 'Ubuntu';
+        margin-top: 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 25%);
+        background: #233459;
+        border-radius: 8px;
+        color: #fff;
+      }
+      .card-abstract .header {
+        padding: 20px 0px 30px 40px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        background-color: #233459;
+        color: #fff;
+      }
+      .card-abstract .header .info {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+      }
+      .card-abstract .header .info .title {
+        font-weight: 300;
+        width: 25%;
+      }
+      .card-abstract .header .info .description {
+        font-weight: 600;
+        margin-left: 20px;
+      }
+      .card-abstract .header .iconAdded {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        right: 4%;
+        top: 15%;
+        width: 1.5rem;
+      }
+      .card-abstract .header .iconAdded img {
+        transition: 0.5s ease-in-out;
+      }
+      .card-abstract .header .iconAdded img.rotate {
+        transform: rotate(180deg);
+      }
+      @media (max-width: 768px) {
+        .card-abstract .header {
+          display: block;
+        }
+      }
+    </style>
+  </body>
+</html>

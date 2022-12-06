@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
+  <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+</head>
+
+<body>
+  <h1>
+    Hola mundo
+  </h1>
+  <p>¿Cómo están?</p>
+  <button type="button">Crear PDF</button>
+  <div class='table-content'>
+    <table>
+      <thead>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>dato1</td>
+          <td>2,3</td>
+          <td>4,5</td>
+        </tr>
+        <tr>
+          <td>dato2</td>
+          <td>7,2</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>dato3</td>
+          <td>1,1</td>
+          <td>9,1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+<style>
+  .table-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  table {
+    text-align: center;
+  }
+
+  thead {
+    background-color: #ddd;
+  }
+
+  td {
+    padding: 10px;
+  }
+</style>
+
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <span class="help-symbol" id="modify-help">
+        <img
+          src="https://www.coopeuch.cl/media/wysiwyg/TOOLTIP.png"
+          alt="desplegar tooltip"
+        />
+      </span>
+
+      <span class="help-symbol" id="where-help">
+        <img
+          src="https://www.coopeuch.cl/media/wysiwyg/TOOLTIP.png"
+          alt="desplegar tooltip"
+        />
+      </span>
+
+      <div class="tooltip" id="modify-credit-tooltip">
+        <div class="exit-tooltip-btn-container">
+          <button
+            type="button"
+            class="exit-tooltip-btn"
+            id="exit-modify-tooltip"
+          >
+            x
+          </button>
+        </div>
+        <p class="title">¿Necesitas modificar tu crédito?</p>
+        <p class="description">
+          Al editar el monto y/o plazo, recuerda que no puedes superar la cuota
+          indicada.
+        </p>
+      </div>
+
+      <div class="tooltip" id="where-to-pay-tooltip">
+        <div class="exit-tooltip-btn-container">
+          <button
+            type="button"
+            class="exit-tooltip-btn"
+            id="exit-where-tooltip"
+          >
+            x
+          </button>
+        </div>
+        <p class="title">¿Dónde se paga la cuota?</p>
+        <p class="description">
+          Paga la cuota con tu Monedero Digital en la sección Cuenta Vista.
+        </p>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

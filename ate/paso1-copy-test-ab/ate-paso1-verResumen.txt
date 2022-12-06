@@ -1,0 +1,1 @@
+document.getElementsByName("Simular").textContent = 'Ver resumen'
